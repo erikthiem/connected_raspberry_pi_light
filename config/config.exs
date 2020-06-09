@@ -23,6 +23,8 @@ config :nerves, source_date_epoch: "1591722877"
 
 config :logger, backends: [RingLogger]
 
+config :nerves_leds, names: [green: "led0"]
+
 if Mix.target() != :host do
   import_config "target.exs"
 end

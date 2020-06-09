@@ -33,6 +33,8 @@ defmodule NetworkLed.Application do
       # Children for all targets except host
       # Starts a worker by calling: NetworkLed.Worker.start_link(arg)
       # {NetworkLed.Worker, arg},
+      {NetworkLed.Blinker, name: NetworkLed.Blinker},
+      {Plug.Cowboy, scheme: :http, plug: NetworkLed.Http, options: [port: 80]}
     ]
   end
 
