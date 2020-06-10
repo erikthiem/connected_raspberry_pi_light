@@ -60,6 +60,7 @@ defmodule NetworkLed.MixProject do
 
       {:nerves_leds, "~> 0.8", targets: @all_targets},
       {:plug_cowboy, "~> 2.0"},
+      {:picam, "~> 0.4.0"},
     ]
   end
 

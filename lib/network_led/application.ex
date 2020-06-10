@@ -14,6 +14,7 @@ defmodule NetworkLed.Application do
         # Children for all targets
         # Starts a worker by calling: NetworkLed.Worker.start_link(arg)
         # {NetworkLed.Worker, arg},
+        {Picam.Camera, []}
       ] ++ children(target())
 
     Supervisor.start_link(children, opts)
