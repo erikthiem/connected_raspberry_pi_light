@@ -1,4 +1,6 @@
-# NetworkLed
+# Connected Raspberry Pi Light
+
+Based on https://elixirschool.com/en/lessons/advanced/nerves/
 
 You must define the environment variables WIFI_USERNAME and WIFI_PASSWORD
 by doing "export WIFI_USERNAME=username" and "export WIFI_PASSWORD=password"
