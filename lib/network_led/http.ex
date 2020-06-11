@@ -18,12 +18,25 @@ defmodule NetworkLed.Http do
     markup = """
     <html>
     <head>
-      <title>Control the light</title>
+      <title>Control the green light</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <style>
+
+        .fancy_button {
+          padding: 5px;
+          border: 2px solid black;
+          font-size: 40px;
+          margin-right: 20px;
+          background-color: lightgray;
+        }
+
+      </style>
     </head>
     <body>
-      <h1>Control the light</h1>
-      <button id="enable">On</button>
-      <button id="disable">Off</button>
+      <h1>Control the green light</h1>
+      <button id="enable" class="fancy_button">On</button>
+      <button id="disable" class="fancy_button">Off</button>
+      <br/>
       <br/>
       <img src="video.mjpg" />
 
